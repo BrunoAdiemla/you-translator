@@ -1,0 +1,7 @@
+{
+  "name": "You Translator",
+  "description": "A gamified language learning app where users practice translating from their native language to English, featuring AI-powered pedagogical feedback, scoring, and progress tracking.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
