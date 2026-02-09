@@ -6,6 +6,7 @@ import { storageService } from '../services/storageService';
 import { supabaseUserService } from '../services/supabaseUserService';
 import { supabaseAuthService } from '../services/supabaseAuthService';
 import { translations } from '../translations';
+import Logo from '../components/Logo';
 
 interface OnboardingProps {
   onComplete: (profile: UserProfile) => void;
@@ -101,6 +102,10 @@ const OnboardingView: React.FC<OnboardingProps> = ({ onComplete, prefilledName, 
   return (
     <div className="mobile-container flex flex-col p-8 pt-16 bg-white dark:bg-slate-950 min-h-screen">
       <div className="flex-1">
+        <div className="flex items-center justify-center mb-8">
+          <Logo size="md" />
+        </div>
+        
         <h1 className="text-3xl font-black text-slate-900 dark:text-white mb-2 font-heading">
           {step === 1 ? t.welcome : step === 2 ? t.nativeLang : t.level}
         </h1>

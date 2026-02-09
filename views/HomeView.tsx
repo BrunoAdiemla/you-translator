@@ -7,6 +7,7 @@ import { translations } from '../translations';
 import { supabaseUserService } from '../services/supabaseUserService';
 import { supabaseTranslationService, Translation } from '../services/supabaseTranslationService';
 import { cacheService } from '../services/cacheService';
+import Logo from '../components/Logo';
 
 interface HomeProps {
   profile: UserProfile;
@@ -112,6 +113,10 @@ const HomeView: React.FC<HomeProps> = ({ profile, supabaseUserId }) => {
 
   return (
     <div className="p-6 pt-10 space-y-6 bg-white dark:bg-slate-900 min-h-screen">
+      <div className="flex items-center justify-center mb-4">
+        <Logo size="sm" />
+      </div>
+      
       <header className="flex items-center justify-between">
         <div>
           <p className="text-slate-400 dark:text-slate-500 text-sm font-medium">{t.welcome}</p>

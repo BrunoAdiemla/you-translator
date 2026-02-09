@@ -5,6 +5,7 @@ import { supabaseAuthService } from '../services/supabaseAuthService';
 import { storageService } from '../services/storageService';
 import { translations } from '../translations';
 import { Mail, Lock, User, ArrowRight, ArrowLeft, Github, Chrome, AlertCircle, CheckCircle2, Eye, EyeOff } from 'lucide-react';
+import Logo from '../components/Logo';
 
 interface AuthViewProps {
   onAuthenticated: (session: AuthSession) => void;
@@ -96,9 +97,7 @@ const AuthView: React.FC<AuthViewProps> = ({ onAuthenticated, language }) => {
   return (
     <div className="mobile-container flex flex-col p-8 pt-16 bg-white dark:bg-slate-950 min-h-screen">
       <header className="mb-10 animate-in fade-in slide-in-from-top-4 duration-500">
-        <div className="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center text-white mb-6 shadow-xl shadow-indigo-100 dark:shadow-none">
-          <Chrome size={32} />
-        </div>
+        <Logo size="lg" className="mb-6" />
         <h1 className="text-3xl font-black text-slate-900 dark:text-white font-heading">
           {view === 'login' ? t.loginTitle : view === 'signup' ? t.signupTitle : t.forgotTitle}
         </h1>
