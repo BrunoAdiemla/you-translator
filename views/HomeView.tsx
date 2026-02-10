@@ -8,6 +8,7 @@ import { supabaseUserService } from '../services/supabaseUserService';
 import { supabaseTranslationService, Translation } from '../services/supabaseTranslationService';
 import { cacheService } from '../services/cacheService';
 import Logo from '../components/Logo';
+import InstallPrompt from '../components/InstallPrompt';
 
 interface HomeProps {
   profile: UserProfile;
@@ -181,6 +182,8 @@ const HomeView: React.FC<HomeProps> = ({ profile, supabaseUserId }) => {
           </div>
         </div>
       </div>
+
+      <InstallPrompt />
 
       <section className="space-y-4">
         <div className="flex items-center justify-between">

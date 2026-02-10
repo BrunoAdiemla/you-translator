@@ -7,6 +7,8 @@ import { supabaseUserService } from './services/supabaseUserService';
 import { UserProfile, Language, AuthSession, Difficulty } from './types';
 import { ICONS } from './constants';
 import { translations } from './translations';
+import OfflineIndicator from './components/OfflineIndicator';
+import UpdateNotification from './components/UpdateNotification';
 
 // View components
 import OnboardingView from './views/OnboardingView';
@@ -252,6 +254,8 @@ const AppContent: React.FC = () => {
 export default function App() {
   return (
     <HashRouter>
+      <OfflineIndicator />
+      <UpdateNotification />
       <AppContent />
     </HashRouter>
   );
