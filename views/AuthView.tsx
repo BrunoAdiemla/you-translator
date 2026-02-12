@@ -95,7 +95,7 @@ const AuthView: React.FC<AuthViewProps> = ({ onAuthenticated, language }) => {
   }, [view]);
 
   return (
-    <div className="mobile-container flex flex-col p-8 pt-16 bg-white dark:bg-slate-950 min-h-screen">
+    <div className="mobile-container flex flex-col p-8 pt-16 bg-[#FAFAFA] dark:bg-slate-950 min-h-screen">
       <header className="mb-10 animate-in fade-in slide-in-from-top-4 duration-500">
         <Logo size="lg" className="mb-6" />
         <h1 className="text-3xl font-black text-slate-900 dark:text-white font-heading">
@@ -208,11 +208,11 @@ const AuthView: React.FC<AuthViewProps> = ({ onAuthenticated, language }) => {
         </div>
 
         <div className="grid grid-cols-2 gap-4">
-          <button className="flex items-center justify-center space-x-2 py-3 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl text-sm font-bold text-slate-700 dark:text-slate-300 active:scale-95 transition-all">
+          <button className="flex items-center justify-center space-x-2 py-3 bg-[#FAFAFA] dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl text-sm font-bold text-slate-700 dark:text-slate-300 active:scale-95 transition-all">
             <Chrome size={18} className="text-indigo-600" />
             <span>Google</span>
           </button>
-          <button className="flex items-center justify-center space-x-2 py-3 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl text-sm font-bold text-slate-700 dark:text-slate-300 active:scale-95 transition-all">
+          <button className="flex items-center justify-center space-x-2 py-3 bg-[#FAFAFA] dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl text-sm font-bold text-slate-700 dark:text-slate-300 active:scale-95 transition-all">
             <Github size={18} className="text-slate-900 dark:text-white" />
             <span>GitHub</span>
           </button>

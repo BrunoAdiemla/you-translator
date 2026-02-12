@@ -100,7 +100,7 @@ const OnboardingView: React.FC<OnboardingProps> = ({ onComplete, prefilledName, 
   };
 
   return (
-    <div className="mobile-container flex flex-col p-8 pt-16 bg-white dark:bg-slate-950 min-h-screen">
+    <div className="mobile-container flex flex-col p-8 pt-16 bg-[#FAFAFA] dark:bg-slate-950 min-h-screen">
       <div className="flex-1">
         <div className="flex items-center justify-center mb-8">
           <Logo size="md" />

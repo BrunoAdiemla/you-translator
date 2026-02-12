@@ -207,7 +207,7 @@ const ProfileView: React.FC<ProfileProps> = ({ profile, onUpdateProfile, supabas
         </div>
       </header>
 
-      <div className="bg-slate-50 dark:bg-slate-800 rounded-3xl p-6 grid grid-cols-3 gap-4 border border-slate-100 dark:border-slate-700">
+      <div className="bg-white dark:bg-slate-800 rounded-3xl p-6 grid grid-cols-3 gap-4 border border-slate-100 dark:border-slate-700">
         <div className="text-center space-y-1">
           <p className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">{t.xp}</p>
           <p className="text-lg font-black text-slate-900 dark:text-white">{userPoints}</p>
@@ -498,7 +498,7 @@ const ProfileView: React.FC<ProfileProps> = ({ profile, onUpdateProfile, supabas
   );
 
   return (
-    <div className="p-6 pt-10 pb-20 bg-white dark:bg-slate-900 min-h-screen">
+    <div className="p-6 pt-10 pb-28 bg-[#f5f5f5] dark:bg-slate-900 min-h-screen">
       {subView === 'main' && renderMainView()}
       {subView === 'preferences' && renderPreferencesView()}
       {subView === 'userdata' && renderUserDataView()}

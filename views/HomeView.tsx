@@ -113,7 +113,7 @@ const HomeView: React.FC<HomeProps> = ({ profile, supabaseUserId }) => {
   };
 
   return (
-    <div className="p-6 pt-10 space-y-6 bg-white dark:bg-slate-900 min-h-screen">
+    <div className="p-6 pt-10 pb-28 space-y-6 bg-[#f5f5f5] dark:bg-slate-900 min-h-screen">
       <div className="flex items-center justify-center mb-4">
         <Logo size="sm" />
       </div>

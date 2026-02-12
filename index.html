@@ -38,7 +38,7 @@
       body {
         margin: 0;
         padding: 0;
-        background-color: #F8FAFC;
+        background-color: #f5f5f5;
       }
       .mobile-container {
         max-width: 480px;
@@ -56,6 +56,24 @@
       .dark ::-webkit-scrollbar-thumb {
         background: #475569;
         border-radius: 10px;
+      }
+      
+      /* Hide scrollbar on mobile devices for native app feel */
+      @media (max-width: 768px) {
+        /* For Webkit browsers (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+          display: none;
+        }
+        
+        /* For Firefox */
+        * {
+          scrollbar-width: none;
+        }
+        
+        /* For IE and Edge Legacy */
+        * {
+          -ms-overflow-style: none;
+        }
       }
     </style>
   <script type="importmap">

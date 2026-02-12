@@ -67,7 +67,7 @@ const LeaderboardView: React.FC<LeaderboardProps> = ({ profile, supabaseUserId }
   }
 
   return (
-    <div className="p-6 pt-10 space-y-6 bg-white dark:bg-slate-900 min-h-screen">
+    <div className="p-6 pt-10 pb-28 space-y-6 bg-[#f5f5f5] dark:bg-slate-900 min-h-screen">
       <header className="text-center space-y-1">
         <h1 className="text-2xl font-bold text-slate-900 dark:text-white font-heading">{t.title}</h1>
         <p className="text-sm text-slate-500 dark:text-slate-400">{t.subtitle}</p>
@@ -129,7 +129,7 @@ const LeaderboardView: React.FC<LeaderboardProps> = ({ profile, supabaseUserId }
           return (
             <div 
               key={user.id} 
-              className={`flex items-center p-4 space-x-4 border-b border-slate-50 dark:border-slate-700 last:border-0 ${isMe ? 'bg-indigo-50/50 dark:bg-indigo-900/20' : ''}`}
+              className="flex items-center p-4 space-x-4 border-b border-slate-50 dark:border-slate-700 last:border-0"
             >
               <div className="w-6 text-center text-xs font-black text-slate-400 dark:text-slate-600">
                 {index + 1}

@@ -137,7 +137,7 @@ const PracticeView: React.FC<PracticeProps> = ({ profile, onUpdateProfile }) => 
 
   // Tela de seleção de modo
   if (mode === 'selection') return (
-    <div className="h-screen bg-white dark:bg-slate-900 flex flex-col items-center justify-center p-8 text-center space-y-8">
+    <div className="h-screen bg-[#f5f5f5] dark:bg-slate-900 flex flex-col items-center justify-center p-8 text-center space-y-8">
       <button onClick={() => navigate('/')} className="absolute top-6 left-6 p-2 text-slate-400 dark:text-slate-500 hover:text-slate-600 transition-colors">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
       </button>
@@ -182,7 +182,7 @@ const PracticeView: React.FC<PracticeProps> = ({ profile, onUpdateProfile }) => 
 
   // Tela de "Gerar Frase" (modo automático)
   if (mode === 'auto' && showStartButton) return (
-    <div className="h-screen bg-white dark:bg-slate-900 flex flex-col items-center justify-center p-8 text-center space-y-6">
+    <div className="h-screen bg-[#f5f5f5] dark:bg-slate-900 flex flex-col items-center justify-center p-8 text-center space-y-6">
       <button onClick={handleBackToSelection} className="absolute top-6 left-6 p-2 text-slate-400 dark:text-slate-500 hover:text-slate-600 transition-colors">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
       </button>
@@ -206,14 +206,14 @@ const PracticeView: React.FC<PracticeProps> = ({ profile, onUpdateProfile }) => 
   );
 
   if (loading) return (
-    <div className="h-screen bg-white dark:bg-slate-900 flex flex-col items-center justify-center p-8 text-center space-y-4">
+    <div className="h-screen bg-[#f5f5f5] dark:bg-slate-900 flex flex-col items-center justify-center p-8 text-center space-y-4">
       <div className="w-16 h-16 border-4 border-indigo-100 dark:border-indigo-900 border-t-indigo-600 rounded-full animate-spin"></div>
       <p className="text-slate-500 dark:text-slate-400 font-medium">{t.generating}</p>
     </div>
   );
 
   return (
-    <div className="p-6 pt-10 pb-24 space-y-6 bg-white dark:bg-slate-900 min-h-screen">
+    <div className="p-6 pt-10 pb-28 space-y-6 bg-[#f5f5f5] dark:bg-slate-900 min-h-screen">
       <div className="flex items-center space-x-4">
         <button onClick={handleBackToSelection} className="p-2 text-slate-400 dark:text-slate-500 hover:text-slate-600 transition-colors">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
@@ -276,7 +276,7 @@ const PracticeView: React.FC<PracticeProps> = ({ profile, onUpdateProfile }) => 
               <textarea
                 value={answer}
                 disabled
-                className="w-full h-32 p-5 bg-slate-50 dark:bg-slate-800/50 border-2 border-slate-100 dark:border-slate-700 rounded-3xl resize-none text-lg text-slate-700 dark:text-slate-300 font-medium opacity-80 cursor-not-allowed"
+                className="w-full h-32 p-5 bg-[#e6e6fa] dark:bg-slate-800/50 border-2 border-slate-100 dark:border-slate-700 rounded-3xl resize-none text-lg text-slate-700 dark:text-slate-300 font-medium opacity-80 cursor-not-allowed"
               />
             </div>
 

@@ -38,14 +38,14 @@ const HistoryListView: React.FC<HistoryListProps> = ({ profile }) => {
 
   if (loading) {
     return (
-      <div className="p-6 pt-10 pb-20 space-y-6 bg-white dark:bg-slate-900 min-h-screen flex items-center justify-center">
+      <div className="p-6 pt-10 pb-28 space-y-6 bg-[#f5f5f5] dark:bg-slate-900 min-h-screen flex items-center justify-center">
         <div className="w-16 h-16 border-4 border-indigo-100 dark:border-indigo-900 border-t-indigo-600 rounded-full animate-spin"></div>
       </div>
     );
   }
 
   return (
-    <div className="p-6 pt-10 pb-20 space-y-6 bg-white dark:bg-slate-900 min-h-screen">
+    <div className="p-6 pt-10 pb-28 space-y-6 bg-[#f5f5f5] dark:bg-slate-900 min-h-screen">
       <header className="space-y-1">
         <h1 className="text-2xl font-bold text-slate-900 dark:text-white font-heading">{t.title}</h1>
         <p className="text-sm text-slate-500 dark:text-slate-400">{t.subtitle}</p>

@@ -79,7 +79,7 @@ const HistoryDetailView: React.FC<HistoryDetailProps> = ({ profile }) => {
 
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-        <div className="w-full max-w-md bg-white dark:bg-slate-800 rounded-3xl shadow-2xl p-6 space-y-4 animate-in fade-in zoom-in duration-200">
+        <div className="w-full max-w-md bg-[#FAFAFA] dark:bg-slate-800 rounded-3xl shadow-2xl p-6 space-y-4 animate-in fade-in zoom-in duration-200">
           <h3 className="text-xl font-bold text-slate-900 dark:text-white font-heading">
             {t.deleteModalTitle}
           </h3>
@@ -138,7 +138,7 @@ const HistoryDetailView: React.FC<HistoryDetailProps> = ({ profile }) => {
   }
 
   return (
-    <div className="p-6 pt-10 pb-24 space-y-6 bg-white dark:bg-slate-900 min-h-screen">
+    <div className="p-6 pt-10 pb-28 space-y-6 bg-[#f5f5f5] dark:bg-slate-900 min-h-screen">
       <header className="flex items-center space-x-4">
         <button 
           onClick={() => navigate('/history')}
@@ -161,7 +161,7 @@ const HistoryDetailView: React.FC<HistoryDetailProps> = ({ profile }) => {
         {/* User's Work */}
         <div className="space-y-2">
           <label className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest px-1">{t.yourTranslation}</label>
-          <div className="w-full p-5 bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 rounded-3xl text-slate-700 dark:text-slate-300 font-medium">
+          <div className="w-full p-5 bg-[#e6e6fa] dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 rounded-3xl text-slate-700 dark:text-slate-300 font-medium">
             <Quote size={16} className="text-indigo-400 mb-2" />
             <p className="text-lg italic">{translation.user_translation}</p>
           </div>

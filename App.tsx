@@ -235,7 +235,7 @@ const AppContent: React.FC = () => {
 
   return (
     <div className={`${profile.theme === 'dark' ? 'dark' : ''} bg-slate-50 dark:bg-slate-950 min-h-screen`}>
-      <div className="mobile-container relative pb-20 overflow-x-hidden bg-white dark:bg-slate-900 min-h-screen">
+      <div className="mobile-container relative pb-20 overflow-x-hidden bg-[#f5f5f5] dark:bg-slate-900 min-h-screen">
         <Routes>
           <Route path="/" element={<HomeView profile={profile} supabaseUserId={session.user.id} />} />
           <Route path="/practice" element={<PracticeView profile={profile} onUpdateProfile={setProfile} />} />
